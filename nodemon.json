@@ -1,0 +1,7 @@
+{
+    "env":{
+        "MONGO_USER":"Vishalrk",
+        "MONGO_PASSWORD":"tech1mini",
+        "MONGO_DATABASE":"jobster"
+    }
+}

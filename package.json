@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Jobster backend work",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production MONGO_USER=Vishalrk MONGO_PASSWORD=tech1mini MONGO_DATABASE=jobster node app.js",
+    "start-server": "node app.js",
+    "start:dev": "nodemon app.js"
+  },
+  "author": "Techathalon",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.7.5",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "connect-mongodb-session": "^3.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "graphql-tag": "^2.12.6",
+    "helmet": "^7.0.0",
+    "ip": "^2.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "moment": "^2.29.4",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "validator": "^13.9.0"
+  }
+}
