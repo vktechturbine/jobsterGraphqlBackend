@@ -77,8 +77,11 @@ export const resolvers = {
         },
         createJob: async function (parent, { jobInput }, context, info) {
             console.log(jobInput);
-
-            const user = await User.findById('64ab8fb6d8fcdecf17085c8b');
+            
+            if (!context.isAuth) {
+                const error = new Error("Not Authorized");
+            }
+            const user = await User.findById(context.user.userId);
 
             const job = new Job({
                 position: jobInput.position,
